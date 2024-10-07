@@ -60,8 +60,8 @@ Clone the appropriate git repo with the starter code. There will be 2 folders. Z
     - `curl -sSL https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash`
 
 - terraform
-    - `wget https://releases.hashicorp.com/terraform/1.0.7/terraform_1.0.7_linux_amd64.zip`
-    - `unzip terraform_1.0.7_linux_amd64.zip`
+    - `wget https://releases.hashicorp.com/terraform/1.7.5/terraform_1.7.5_linux_amd64.zip`
+    - `unzip terraform_1.7.5_linux_amd64.zip`
     - `mkdir ~/bin`
     - `mv terraform ~/bin`
     - `export TF_PLUGIN_CACHE_DIR="/tmp"`
@@ -79,7 +79,7 @@ Clone the appropriate git repo with the starter code. There will be 2 folders. Z
     - `terraform apply`
 
 **NOTE** The first time you run `terraform apply` you may see errors about the Kubernetes namespace or an RDS error. Running it again AND performing the step below should clear up those errors.
-
+3/26/2024 10:17pm: Finish the step 7, but still get errors. Need to implement the step 8 
 8. Setup Kubernetes config so you can ping the EKS cluster
    - `aws eks --region us-east-2 update-kubeconfig --name udacity-cluster`
    - Change kubernetes context to the new AWS cluster
